@@ -14,14 +14,8 @@
           <h3 class="text-3xl font-extrabold mb-8 max-md:text-center">
               Sign in
           </h3>
-          <?php if(isset($_SESSION['error'])): ?>
-              <div class="text-red-500 mb-4">
-                  <?php echo $_SESSION['error']; ?>
-              </div>
-              <?php unset($_SESSION['error']); ?>
-          <?php endif; ?>
           <div>
-              <input name="email" type="email" autocomplete="email" required class="bg-gray-100 w-full text-sm px-4 py-3.5 rounded-md outline-blue-600" placeholder="Email address" />
+          <input name="email" type="email" autocomplete="email" required class="bg-gray-100 w-full text-sm px-4 py-3.5 rounded-md outline-blue-600" placeholder="Email address" oninput="this.setCustomValidity(this.validity.typeMismatch ? 'Please enter a valid email address.' : '');" />
           </div>
           <div>
               <input name="password" type="password" autocomplete="current-password" required class="bg-gray-100 w-full text-sm px-4 py-3.5 rounded-md outline-blue-600" placeholder="Password" />
