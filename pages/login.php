@@ -9,10 +9,10 @@ if (isset($_GET['error'])) {
       <div class="grid md:grid-cols-2 items-center gap-10 max-w-6xl w-full">
         <div class="max-md:text-center">
           <h2 class="lg:text-5xl text-4xl font-extrabold lg:leading-[55px]">
-            Seamless Login for Exclusive Access
+            MekaniX
           </h2>
-          <p class="text-sm mt-6">Immerse yourself in a hassle-free login journey with our intuitively designed login form. Effortlessly access your account.</p>
-          <p class="text-sm mt-10">Don't have an account <a href="javascript:void(0);" class="text-blue-600 font-semibold hover:underline ml-1">Register here</a></p>
+          <p class="text-sm mt-6">Welcome to MekaniX - Your Go-To for Mechanic Services! Join us for quick access to skilled mechanics. Get your vehicle back on the road hassle-free!</p>
+          <p class="text-sm mt-10">Don't have an account? <a href="javascript:void(0);" class="text-blue-600 font-semibold hover:underline ml-1">Register here</a></p>
         </div>
 
         <form action="process_login.php" method="post" class="space-y-6 max-w-md md:ml-auto max-md:mx-auto w-full">
