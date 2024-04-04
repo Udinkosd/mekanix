@@ -1,15 +1,5 @@
-<!DOCTYPE html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Mekanix</title>
-  <meta name="description" content="Simple landing page">
-  <meta name="keywords" content="">
-  <meta name="author" content="">
-  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/styles.css">
+<?php include 'head.php'; ?>
+<?php include 'process_image.php'; ?>
 </head>
   <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
     <!--Nav-->
@@ -71,13 +61,14 @@
             Skip the queues and get back on the road hassle-free. 
             Choose us for convenient automotive care today!
           </p>
-          <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+          <a href="/pages/login.php" class="block mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
             Call Mechanic
-          </button>
+        </a>
         </div>
         <!--Right Col-->
         <div class="w-full md:w-3/5 py-6 text-center">
-          <img class="w-full md:w-4/5 z-50" src="/assets/img/hero.png" />
+            <img src='data:image/jpeg;base64," . base64_encode($profilePhoto) . "' alt='Image' />
+            <img src="data:image/jpeg;base64,<?php echo base64_encode($profilePhoto); ?>" alt="Image">
         </div>
       </div>
     </div>

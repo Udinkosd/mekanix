@@ -1,4 +1,30 @@
 <?php include 'head.php'; ?>
+<?php
+include 'includes/connection.php';
+
+session_start();
+
+if (isset($_SESSION['id'])) {
+    $userId = $_SESSION['id'];
+    $userEmail = $_SESSION['email'];
+
+    $sql = "SELECT photo FROM personal_information WHERE username = (SELECT username FROM users WHERE id = $userId)";
+    
+    $result = mysqli_query($conn, $sql);
+
+      if ($result && mysqli_num_rows($result) == 1) {
+        $row = mysqli_fetch_assoc($result);
+        $profilePhoto = $row['photo'];
+      
+    } else {
+        $profilePhoto = "/assets/img/default.jpg";
+    }
+  
+} else {
+    $profilePhoto = "/assets/img/default1.jpg";
+}
+?>
+
 <main class="flex w-full h-full shadow-lg rounded-3xl">
     <section class="flex flex-col w-2/12 bg-white rounded-l-3xl">
       <div class="w-16 mx-auto mt-12 mb-20 p-4 bg-indigo-600 rounded-2xl text-white">
@@ -8,8 +34,10 @@
         </svg>
       </div>
       <nav class="relative flex flex-col py-4 items-center">
-        <a href="/assets/img/me.jpg" class="relative w-16 p-4 bg-purple-100 text-purple-900 rounded-2xl mb-4">
-            <img src="/assets/img/me.jpg" alt="My Photo" class="w-full h-full object-cover rounded-full">
+        <a href="" class="relative w-16 p-4 bg-purple-100 text-purple-900 rounded-2xl mb-4">
+            <img src="data:image/jpeg;base64,<?php echo base64_encode($profilePhoto); ?>" 
+                alt="My Photo" 
+                class="w-full h-full object-cover rounded-full">
         </a>
         <a href="#" class="relative w-16 p-4 bg-purple-100 text-purple-900 rounded-2xl mb-4">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">

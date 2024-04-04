@@ -1,4 +1,29 @@
 <?php include 'head.php'; ?>
+<?php
+include 'includes/connection.php';
+
+session_start();
+
+if (isset($_SESSION['id'])) {
+    $userId = $_SESSION['id'];
+    $userEmail = $_SESSION['email'];
+
+    $sql = "SELECT photo FROM personal_information WHERE username = (SELECT username FROM users WHERE id = $userId)";
+    
+    $result = mysqli_query($conn, $sql);
+
+      if ($result && mysqli_num_rows($result) == 1) {
+        $row = mysqli_fetch_assoc($result);
+        $profilePhoto = $row['photo'];
+      
+    } else {
+        $profilePhoto = "/assets/img/default.jpg";
+    }
+  
+} else {
+    $profilePhoto = "/assets/img/default1.jpg";
+}
+?>
 <form id="login">
                 <div class="bg-white dark:bg-gray-800">
                     <div class="container mx-auto bg-white dark:bg-gray-800 rounded">
@@ -26,7 +51,7 @@
                                         <img src="https://cdn.tuk.dev/assets/webapp/forms/form_layouts/form2.jpg" alt="" class="absolute z-0 h-full w-full object-cover rounded-full shadow top-0 left-0 bottom-0 right-0" />
                                         <div class="absolute bg-black opacity-50 top-0 right-0 bottom-0 left-0 rounded-full z-0"></div>
                                         <div class="cursor-pointer flex flex-col justify-center items-center z-10 text-gray-100">
-                                            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/simple_form-svg1.svg" alt="Edit">
+                                            <img src="data:image/jpeg;base64,<?php echo base64_encode($profilePhoto); ?>" alt="Edit">
                                             <p class="text-xs text-gray-100">Edit Picture</p>
                                         </div>
                                     </div>
