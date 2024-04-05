@@ -147,7 +147,7 @@
               The mechanic arrived on time and did an excellent job. I couldn't be happier with the outcome."
               </div>
               <p class="text-gray-800 text-base px-6 mb-5">
-                - Jane Smith
+                - Abdullah Faiz Tedjo
               </p>
             </a>
           </div>
@@ -162,7 +162,7 @@
                 I highly recommend Mekanix to anyone in need of automotive repairs."
               </div>
               <p class="text-gray-800 text-base px-6 mb-5">
-              - David Johnson
+              - Doni Arya Rachmadi
               </p>
             </a>
           </div>
@@ -177,7 +177,7 @@
               Their dedication to customer satisfaction is evident in every interaction. I'm a loyal customer for life."
               </div>
               <p class="text-gray-800 text-base px-6 mb-5">
-                - Jarrius N Devoreaux
+                - Fakhmul
               </p>
             </a>
           </div>
@@ -239,7 +239,9 @@
                     </ul>
                   </div>
                 </div>
-                <button type="button" class="w-full absolute bottom-0 px-2 h-12 text-sm font-bold text-[#333] bg-gray-200">Register Now</button>
+                <a href="register.php">
+                  <button type="button" class="w-full absolute bottom-0 px-2 h-12 text-sm font-bold text-[#333] bg-gray-200">Register Now</button>
+                </a>
               </div>
 
               <div class="bg-white hover:outline rounded relative overflow-hidden transition-all">
@@ -284,7 +286,9 @@
                     </ul>
                   </div>
                 </div>
-                <button type="button" class="w-full absolute bottom-0 px-2 h-12 text-sm font-semibold text-[#333] bg-gray-200">Register Now</button>
+                <a href="register.php">
+                  <button type="button" class="w-full absolute bottom-0 px-2 h-12 text-sm font-bold text-[#333] bg-gray-200">Register Now</button>
+                </a>
               </div>
               
             </div>

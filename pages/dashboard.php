@@ -90,50 +90,50 @@ if (isset($_SESSION['id'])) {
       <ul class="mt-6">
         <li class="py-5 border-b px-3 transition hover:bg-indigo-100">
           <a href="#" class="flex justify-between items-center">
-            <h3 class="text-lg font-semibold">Akhil Gautam</h3>
-            <p class="text-md text-gray-400">23m ago</p>
+            <h3 class="text-lg font-semibold">Reza Pahlevi</h3>
+            <p class="text-md text-gray-400">1hrs ago</p>
           </a>
           <div class="text-md italic text-gray-400">You have been invited!</div>
         </li>
         <li class="py-5 border-b px-3 transition hover:bg-indigo-100">
           <a href="#" class="flex justify-between items-center">
-            <h3 class="text-lg font-semibold">Akhil Gautam</h3>
-            <p class="text-md text-gray-400">23m ago</p>
+            <h3 class="text-lg font-semibold">Muhammad Rifai</h3>
+            <p class="text-md text-gray-400">3hrs ago</p>
+          </a>
+          <div class="text-md italic text-gray-400">Khoirul Nasikin</div>
+        </li>
+        <li class="py-5 border-b px-3 transition hover:bg-indigo-100">
+          <a href="#" class="flex justify-between items-center">
+            <h3 class="text-lg font-semibold">Abdul Rahman</h3>
+            <p class="text-md text-gray-400">20m ago</p>
           </a>
           <div class="text-md italic text-gray-400">You have been invited!</div>
         </li>
         <li class="py-5 border-b px-3 transition hover:bg-indigo-100">
           <a href="#" class="flex justify-between items-center">
-            <h3 class="text-lg font-semibold">Akhil Gautam</h3>
-            <p class="text-md text-gray-400">23m ago</p>
-          </a>
-          <div class="text-md italic text-gray-400">You have been invited!</div>
-        </li>
-        <li class="py-5 border-b px-3 transition hover:bg-indigo-100">
-          <a href="#" class="flex justify-between items-center">
-            <h3 class="text-lg font-semibold">Akhil Gautam</h3>
-            <p class="text-md text-gray-400">23m ago</p>
+            <h3 class="text-lg font-semibold">Chandra Phang</h3>
+            <p class="text-md text-gray-400">45m ago</p>
           </a>
           <div class="text-md italic text-gray-400">You have been invited!</div>
         </li>
         <li class="py-5 border-b px-3 bg-indigo-600 text-white">
           <a href="#" class="flex justify-between items-center">
-            <h3 class="text-lg font-semibold">Akhil Gautam</h3>
-            <p class="text-md">23m ago</p>
+            <h3 class="text-lg font-semibold">Manda Chrsitian Pele</h3>
+            <p class="text-md">10m ago</p>
           </a>
           <div class="text-md">You have been invited!</div>
         </li>
         <li class="py-5 border-b px-3 transition hover:bg-indigo-100">
           <a href="#" class="flex justify-between items-center">
-            <h3 class="text-lg font-semibold">Akhil Gautam</h3>
-            <p class="text-md text-gray-400">23m ago</p>
+            <h3 class="text-lg font-semibold">Muhammad Iqbal</h3>
+            <p class="text-md text-gray-400">1hrs ago</p>
           </a>
           <div class="text-md italic text-gray-400">You have been invited!</div>
         </li>
         <li class="py-5 border-b px-3 transition hover:bg-indigo-100">
           <a href="#" class="flex justify-between items-center">
-            <h3 class="text-lg font-semibold">Akhil Gautam</h3>
-            <p class="text-md text-gray-400">23m ago</p>
+            <h3 class="text-lg font-semibold">Abdul Kadir</h3>
+            <p class="text-md text-gray-400">3hrs ago</p>
           </a>
           <div class="text-md italic text-gray-400">You have been invited!</div>
         </li>
@@ -146,8 +146,8 @@ if (isset($_SESSION['id'])) {
             <img src="https://bit.ly/2KfKgdy" loading="lazy" class="h-full w-full object-cover" />
           </div>
           <div class="flex flex-col">
-            <h3 class="font-semibold text-lg">Akhil Gautam</h3>
-            <p class="text-light text-gray-400">akhil.gautam123@gmail.com</p>
+            <h3 class="font-semibold text-lg">Manda Chrsitian Pele</h3>
+            <p class="text-light text-gray-400">mandala009@gmail.com</p>
           </div>
         </div>
         <div>
@@ -186,18 +186,20 @@ if (isset($_SESSION['id'])) {
           </ul>
         </div>
       </div>
-      <section>
-        <h1 class="font-bold text-2xl">We need UI/UX designer</h1>
-        <article class="mt-8 text-gray-500 leading-7 tracking-wider">
-          <p>Hi Akhil,</p>
-          <p>Design and develop enterprise-facing UI and consumer-facing UI as well as
-            REST API
-            backends.Work with
-            Product Managers and User Experience designers to create an appealing user experience for desktop web and
-            mobile web.</p>
+
+      <section class="">
+        <h1 class="font-bold text-2xl">Are you available today? I need a mechanic ASAP at my location</h1>
+        <article class="mt-8 text-gray-500 leading-7 tracking-wider pr-16">
+          <p>Hello, I require immediate assistance with my vehicle in 
+            Samarinda, at Lempake RT 11, Jalan Poros Number 03.
+            The car won't start up, so I urgently need someone to 
+            come over. Time is of the essence, so please notify 
+            me when you are en route to the location. 
+            I will inform my family that you are the mechanic 
+            arriving to repair my car. Thank you for your prompt 
+            attention to this matter!</p>
           <footer class="mt-12">
-            <p>Thanks & Regards,</p>
-            <p>Alexandar</p>
+            <p>Thanks you!</p>
           </footer>
         </article>
         <ul class="flex space-x-4 mt-12">
@@ -233,6 +235,7 @@ if (isset($_SESSION['id'])) {
           </li>
         </ul>
       </section>
+
       <section class="mt-6 border rounded-xl bg-gray-50 mb-3">
         <textarea class="w-full bg-gray-50 p-2 rounded-xl" placeholder="Type your reply here..." rows="3"></textarea>
         <div class="flex items-center justify-between p-2">
